@@ -3,7 +3,7 @@ name: Release
 # Publishes to PyPI when a version tag (v*) is pushed.
 # Uses PyPI trusted publishing: no API tokens are stored in this repository.
 # One-time setup on pypi.org: add a "pending publisher" for project `placebo-cli`,
-# owner `Tuleeeee`, repository `placebo`, workflow `release.yml`, environment `pypi`.
+# owner `liebesleid1905`, repository `placebo`, workflow `release.yml`, environment `pypi`.
 
 on:
   push:

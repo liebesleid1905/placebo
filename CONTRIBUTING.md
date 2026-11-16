@@ -6,7 +6,7 @@ clarity beat features.
 ## Development setup
 
 ```bash
-git clone https://github.com/Tuleeeee/placebo && cd placebo
+git clone https://github.com/liebesleid1905/placebo && cd placebo
 uv sync                      # creates .venv with dev dependencies
 uv run pytest                # ~1 minute; no network, no agent accounts needed
 uv run placebo scan examples/skills

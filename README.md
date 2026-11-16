@@ -5,7 +5,7 @@ Controlled A/B trials for Agent Skills and AGENTS.md, on your own repo, with a s
 
 <p align="center">
 <a href="https://pypi.org/project/placebo-cli/"><img alt="PyPI" src="https://img.shields.io/pypi/v/placebo-cli"></a>
-<a href="https://github.com/Tuleeeee/placebo/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Tuleeeee/placebo/actions/workflows/ci.yml/badge.svg"></a>
+<a href="https://github.com/liebesleid1905/placebo/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/liebesleid1905/placebo/actions/workflows/ci.yml/badge.svg"></a>
 <a href="LICENSE"><img alt="License: Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
 </p>
 

@@ -34,10 +34,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Tuleeeee/placebo"
-Repository = "https://github.com/Tuleeeee/placebo"
-Issues = "https://github.com/Tuleeeee/placebo/issues"
-Changelog = "https://github.com/Tuleeeee/placebo/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/liebesleid1905/placebo"
+Repository = "https://github.com/liebesleid1905/placebo"
+Issues = "https://github.com/liebesleid1905/placebo/issues"
+Changelog = "https://github.com/liebesleid1905/placebo/blob/main/CHANGELOG.md"
 
 [project.scripts]
 placebo = "placebo_cli.cli:main"
