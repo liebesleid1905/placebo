@@ -111,6 +111,22 @@ placebo ab --file AGENTS.md=experiments/AGENTS.v2.md --tasks git:10     # A/B an
 
 You also get Δ tokens, Δ $ and Δ time per run, a per-task grid, and a self-contained HTML report in `.placebo/runs/<run>/report.html`. Interrupted runs resume with `--resume`.
 
+## Example: a real A/B run on Copilot CLI
+
+A conventions skill, 10 "add a function" tasks, 60 real Copilot CLI runs (3 arms x 10 tasks x 2 trials):
+
+| Arm | Pass rate | Skill used |
+|---|---|---|
+| baseline (no skill) | 25% (5/20) | n/a |
+| the skill | **100% (20/20)** | 100% |
+| sham (same name and description, inert body) | 70% (14/20) | 100% |
+
+Verdict **HELPS**: +75 pp over baseline (95% CI +50..+95). But the sham arm alone gained +45 pp, so only
+**+30 pp (CI +5..+60)** is due to the skill's actual rules; the rest comes from the skill being loaded at all.
+A plain with/without comparison would have reported +75 pp. Small and synthetic (one model, one agent,
+2 trials per task), so read it as a demonstration of the method, not a benchmark.
+Setup, caveats and how to reproduce: [experiments/copilot-acme-conventions](experiments/copilot-acme-conventions/README.md).
+
 ## Supported agents
 
 | Agent | `scan` | `trigger` / `ab` | Notes |
