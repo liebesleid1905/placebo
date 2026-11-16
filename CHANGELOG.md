@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Copilot CLI adapter (`--agent copilot`): `trigger` and `ab` drive `copilot -p ... --output-format json`.
+  Skill activation is detected from Copilot's `skill` tool; skills are installed in `.github/skills`.
+  Tested against real Copilot CLI 1.0.109 traces. Copilot reports no cost or token counts, so the
+  Tokens column shows the peak context size.
+
 ## 0.1.0 (2026-09-29)
 
 First public release.

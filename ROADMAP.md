@@ -9,11 +9,11 @@ answer with evidence, on their own code, for any coding agent.
 - `trigger`: generated or hand-written probes, activation and false-activation rates
 - `ab`: git-mined validated tasks or YAML tasks; baseline / treatment / sham; worktree isolation;
   randomized interleaving; two-level bootstrap and TOST verdicts; HTML report; budgets; resume
-- Adapters: Claude Code, Codex (beta)
+- Adapters: Claude Code, Codex (beta), Copilot CLI (added after 0.1.0)
 
 ## v0.2: every agent, every PR
 
-- Adapters: Gemini CLI, OpenCode (including local models via Ollama), Cursor CLI, Copilot CLI, Pi
+- Adapters: Gemini CLI, OpenCode (including local models via Ollama), Cursor CLI, Pi (Copilot CLI is done)
 - GitHub Action for `ab` with a PR comment summary; shields.io badge endpoint for skill authors
 - Sequential early stopping (alpha-spending) to cut cost
 - Results cache keyed by task, arm hash, agent version and model

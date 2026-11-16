@@ -100,7 +100,8 @@ tokens, dollars and time with bootstrap CIs.
 - **Pass/fail only.** v0.1 grades by checks. Code quality, style and review-readiness are not measured unless
   your checks measure them (linters, type checkers, custom scripts).
 - **Token counts in `scan` are estimates** (~4 UTF-8 bytes per token). Token and dollar figures in
-  `ab` come from the agent's own reports; Codex reports tokens but not dollars.
+  `ab` come from the agent's own reports; Codex reports tokens but not dollars, and Copilot CLI reports neither (placebo shows the peak
+  context size it observed instead; compare it across arms of the same agent only).
 - **Multiple skills.** When testing many skills, some will look significant by chance. Correct
   for multiple comparisons (e.g. Holm) before acting on a batch.
 - **Model drift.** Results are specific to the agent and model versions recorded in the report.

@@ -8,22 +8,23 @@ import subprocess
 from placebo_cli.adapters.base import AgentAdapter
 from placebo_cli.adapters.claude_code import ClaudeCodeAdapter
 from placebo_cli.adapters.codex import CodexAdapter
+from placebo_cli.adapters.copilot import CopilotAdapter
 from placebo_cli.adapters.fake import FakeAdapter
 
 ADAPTERS: dict[str, type[AgentAdapter]] = {
     "claude-code": ClaudeCodeAdapter,
     "codex": CodexAdapter,
+    "copilot": CopilotAdapter,
     "fake": FakeAdapter,
 }
 
-ALIASES = {"claude": "claude-code", "cc": "claude-code", "openai-codex": "codex"}
+ALIASES = {"claude": "claude-code", "cc": "claude-code", "openai-codex": "codex", "github-copilot": "copilot"}
 
 # Agents we can detect but cannot drive yet (adapters welcome!).
 DETECT_ONLY = {
     "gemini-cli": ("Gemini CLI", "gemini"),
     "opencode": ("OpenCode", "opencode"),
     "cursor": ("Cursor CLI", "cursor-agent"),
-    "copilot": ("Copilot CLI", "copilot"),
     "pi": ("Pi", "pi"),
 }
 

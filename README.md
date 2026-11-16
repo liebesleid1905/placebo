@@ -117,7 +117,8 @@ You also get Δ tokens, Δ $ and Δ time per run, a per-task grid, and a self-co
 |---|---|---|---|
 | Claude Code | ✅ | ✅ | Parser tested against real Claude Code 2.1.281 `stream-json` output |
 | Codex CLI | ✅ | ✅ (beta) | Built from the documented `codex exec --json` format; please report issues |
-| Gemini CLI, OpenCode, Cursor, Copilot, Pi | ✅ | 🚧 | Detected by `doctor`; adapters welcome ([CONTRIBUTING.md](CONTRIBUTING.md#adding-an-agent-adapter)) |
+| Copilot CLI | ✅ | ✅ | Parser tested against real Copilot CLI 1.0.109 `--output-format json` traces. Reports no dollars and no per-run token counts; the Tokens column is the peak context size |
+| Gemini CLI, OpenCode, Cursor, Pi | ✅ | 🚧 | Detected by `doctor`; adapters welcome ([CONTRIBUTING.md](CONTRIBUTING.md#adding-an-agent-adapter)) |
 
 ## Safety and cost (read this)
 
@@ -130,7 +131,7 @@ You also get Δ tokens, Δ $ and Δ time per run, a per-task grid, and a self-co
 
 | | placebo | `claude plugin eval` / skill-creator | Tessl Task Evals | NVIDIA SkillEvaluator |
 |---|---|---|---|---|
-| Works across agents | Claude Code, Codex (more coming) | Claude only | Tessl platform | several |
+| Works across agents | Claude Code, Codex, Copilot CLI (more coming) | Claude only | Tessl platform | several |
 | Tasks from your repo's history, validated | ✅ | – | beta | – |
 | Sham control + equivalence test | ✅ | – | – | – |
 | Free static scan (context tax, collisions, security) | ✅ | partial | ✅ | ✅ |
@@ -140,7 +141,7 @@ If you only use Claude and want help *writing* a skill, Anthropic's skill-creato
 
 ## Roadmap
 
-More adapters (Gemini CLI, OpenCode with local models, Cursor, Copilot, Pi) → GitHub Action with PR comments and badges → sequential early stopping → **SkillBench**, a pre-registered, reproducible public benchmark of popular skills → `compare` (which agent/model is best for *your* repo). See [ROADMAP.md](ROADMAP.md).
+More adapters (Gemini CLI, OpenCode with local models, Cursor, Pi) → GitHub Action with PR comments and badges → sequential early stopping → **SkillBench**, a pre-registered, reproducible public benchmark of popular skills → `compare` (which agent/model is best for *your* repo). See [ROADMAP.md](ROADMAP.md).
 
 ## Contributing
 
